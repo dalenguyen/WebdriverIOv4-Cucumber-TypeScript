@@ -4,7 +4,7 @@ This repository shows an example of how to combine WebdriverIO (v4), Cucumber an
 
 ## Fetaures
 
-+ WebdriverIO v5
++ WebdriverIO v4
 + Cucumber v5
 + Chai v4
 + TypeScript v3
