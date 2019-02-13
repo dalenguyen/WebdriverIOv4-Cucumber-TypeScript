@@ -1,0 +1,22 @@
+import { Given, When, Then } from 'cucumber';
+import { expect } from 'chai';
+
+function isItFriday(today) {
+    if (today === 'Friday') {
+        return 'TGIF';
+    } else {
+        return 'Nope';
+    }
+}
+
+Given('today is {string}', givenDay => {
+    this.today = givenDay;
+});
+
+When('I ask whether it\'s Friday yet', () => {
+    this.actualAnswer = isItFriday(this.today);
+});
+
+Then('I should be told {string}', expectedAnswer => {
+    expect(this.actualAnswer).is.equal(expectedAnswer);
+});
