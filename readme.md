@@ -18,7 +18,30 @@ Install all packages
 npm install
 ```
 
-## Run the test
+## How to write a test
+
+You just need to create a *.feature file under __./features/test/__ folder. The test is written by using [Gherkin Syntax](https://docs.cucumber.io/gherkin/reference/).
+
+```feature
+// myTest.feature
+
+Feature: Is it Friday yet?
+
+   Everybody wants to know when it's Friday
+
+   Scenario: Sunday isn't Friday
+    Given today is Sunday
+    When I ask whether it's Friday yet
+    Then I should be told "Nope"
+```
+
+## Run one test only
+
+```sh
+npm run dev path-to-feature-file
+```
+
+## Run all the test
 
 ```sh
 npm test
@@ -33,3 +56,5 @@ npm run report
 ## Referece
 
 Thanks to [Amiya Pattnaik](https://github.com/amiya-pattnaik/webdriverIO-with-cucumberBDD)
+
+Read [Cucumber Boilerplate](https://github.com/webdriverio/cucumber-boilerplate) for more examples.

@@ -4,8 +4,9 @@
   "description": "WebdriverIO with Cucumber and TypeScript",
   "main": "index.js",
   "scripts": {
-    "test": "wdio wdio.conf.js",
-    "report": "node_modules/.bin/allure generate allure-results -c && allure open"
+    "test": "wdio",
+    "dev": "wdio --spec",
+    "report": "allure generate allure-results -c && allure open"
   },
   "keywords": [
     "webdriverio",
