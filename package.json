@@ -24,7 +24,7 @@
     "chai": "^4.2.0",
     "cucumber": "^5.1.0",
     "ts-node": "^8.0.2",
-    "tsconfig-paths": "^3.8.0",
+    "tsconfig-paths": "^3.10.1",
     "typescript": "^3.3.3",
     "wdio-allure-reporter": "^0.8.3",
     "wdio-cucumber-framework": "^2.2.8",
